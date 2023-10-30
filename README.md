@@ -11,6 +11,9 @@ Bem-vindo ao **Jamesseia A Guerra dos memes**, um emocionante jogo desenvolvido 
 2. **Objetivo:**
    - Sua missão é derrotar todos os chefes e coletar as partes do oculos.
 ## Imagens
+![menu2](https://github.com/VinRodrigues/JamesseiaGame/assets/99925877/6c358108-2aa9-4464-8f72-f9f9b286f982)
+
+![selecao](https://github.com/VinRodrigues/JamesseiaGame/assets/99925877/6bfcd8d3-53fd-441e-9fd0-d51752785839)
 
 ## Requisitos do Sistema
 
