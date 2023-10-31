@@ -7,8 +7,8 @@ public class playerController : MonoBehaviour
 {
     // variaveis de movimento
     public float maxSpeed;
-    public float maxYPos; // Altura máxima permitida
-    public float minYPos; // Altura mínima permitida
+    public float maxYPos; // Altura mï¿½xima permitida
+    public float minYPos; // Altura mï¿½nima permitida
 
     Rigidbody2D myRB;
     Animator myAnim;
@@ -21,9 +21,10 @@ public class playerController : MonoBehaviour
     float firerate = 0.5f;
     float nextFire = 0f;
     public int tirosRestantes = 10; // Quantidade inicial de tiros
-    public Text textoTirosRestantes; // Referência ao objeto de texto no Unity para mostrar os tiros restantes
+    private bool tiroEspecialDisponivel = false;
+    public Text textoTirosRestantes; // Referï¿½ncia ao objeto de texto no Unity para mostrar os tiros restantes
 
-    // Booleano para verificar se a barra de espaço está sendo pressionada
+    // Booleano para verificar se a barra de espaï¿½o estï¿½ sendo pressionada
     bool isSpeeding = false;
 
     // Start is called before the first frame update
@@ -40,27 +41,27 @@ public class playerController : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
 
-        // Configura a velocidade do Rigidbody2D nas direções x e y
+        // Configura a velocidade do Rigidbody2D nas direï¿½ï¿½es x e y
         myRB.velocity = new Vector2(moveX * maxSpeed, moveY * maxSpeed);
 
-        // Limita a posição y dentro das bordas maxYPos e minYPos
+        // Limita a posiï¿½ï¿½o y dentro das bordas maxYPos e minYPos
         float clampedYPos = Mathf.Clamp(myRB.position.y, minYPos, maxYPos);
         myRB.position = new Vector2(myRB.position.x, clampedYPos);
 
-        // Verifica se a barra de espaço está sendo pressionada
+        // Verifica se a barra de espaï¿½o estï¿½ sendo pressionada
         if (Input.GetKeyDown(KeyCode.Space))
         {
             isSpeeding = true;
         }
-        else if (Input.GetKeyUp(KeyCode.Space)) // Verifica se a barra de espaço foi liberada
+        else if (Input.GetKeyUp(KeyCode.Space)) // Verifica se a barra de espaï¿½o foi liberada
         {
             isSpeeding = false;
         }
 
-        // Define o parâmetro booleano no Animator para controlar a animação
+        // Define o parï¿½metro booleano no Animator para controlar a animaï¿½ï¿½o
         myAnim.SetBool("speed", isSpeeding);
 
-        // Verifica a direção do movimento e inverte o sprite conforme necessário
+        // Verifica a direï¿½ï¿½o do movimento e inverte o sprite conforme necessï¿½rio
         if ((moveX > 0 || moveY > 0) && (!facingRight))
         {
             flip();
@@ -72,12 +73,18 @@ public class playerController : MonoBehaviour
 
         // disprado do player
         if (Input.GetAxisRaw("Fire1") > 0) saladaShot();
-        if (Input.GetAxisRaw("Fire2") > 0 && tirosRestantes > 0)
+        if (Input.GetAxisRaw("Fire2") > 0 && tirosRestantes > 0 && tiroEspecialDisponivel)
         {
-            saladaShot2();
+            tiroEspecialDisponivel = false;
             tirosRestantes--;
+            saladaShot2();
             AtualizarTextoTirosRestantes();
+            Invoke("decrementarTirosEspecial", 0.1f);
         }
+    }
+
+    void decrementarTirosEspecial(){
+        tiroEspecialDisponivel = true;
     }
 
     void flip()
@@ -123,6 +130,7 @@ public class playerController : MonoBehaviour
     public void AumentarMunicao(int quantidade)
     {
         tirosRestantes += quantidade;
+        tiroEspecialDisponivel = true;
         AtualizarTextoTirosRestantes();
     }
 }
