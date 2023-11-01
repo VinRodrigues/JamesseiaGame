@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class saladaepecial : MonoBehaviour
 {
-    public int quantidadeMunicao = 10; // Quantidade de munição a ser adicionada ao jogador quando coletado
+    public int quantidadeMunicao = 10; // Quantidade de muniï¿½ï¿½o a ser adicionada ao jogador quando coletado
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            // Obtém a referência ao script playerController no jogador
+            // Obtï¿½m a referï¿½ncia ao script playerController no jogador
             playerController jogador = collision.GetComponent<playerController>();
 
-            // Adiciona a quantidade de munição ao jogador
+            // Adiciona a quantidade de muniï¿½ï¿½o ao jogador
             jogador.AumentarMunicao(quantidadeMunicao);
 
-            // Destroi o coletável após ser coletado
+            // Destroi o coletï¿½vel apï¿½s ser coletado
             Destroy(gameObject);
         }
     }
