@@ -41,6 +41,9 @@ public class enemyHealth : MonoBehaviour
 
     void makeDead()
     {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.concludeFase();
+
         Destroy(gameObject);
         Instantiate(enemyDeath, transform.position, transform.rotation);
         if (drops) Instantiate(theDrop, transform.position, transform.rotation);
