@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540637cd80aa4f54ba5cbdccc3e00b3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nomeDaCena: fase6a
+  nomeDaCena: fase6b
 --- !u!114 &249615479
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -105,7 +105,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: NegoneyS_0
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 161
+        width: 215
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35d3306fca1bc504e934a7fea1d4d8fd
+      internalID: 83813335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NegoneyS_1
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 161
+        width: 215
+        height: 374
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18ba58bc791e3344bf127624954795d
+      internalID: 10462403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NegoneyS_2
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 161
+        width: 453
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baba7e3c3d096ea468b0e574542fa978
+      internalID: -429538937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NegoneyS_3
+      rect:
+        serializedVersion: 2
+        x: 2199
+        y: 160
+        width: 492
+        height: 403
+      alignment: 9
+      pivot: {x: 0.52701694, y: 0.5161063}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53dc99973aa506845a379c107a47ea40
+      internalID: 1776761252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NegoneyS_4
+      rect:
+        serializedVersion: 2
+        x: 2921
+        y: 161
+        width: 453
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02bbd0ccb2b6a543b4ec72711381eb4
+      internalID: -181260603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NegoneyS_5
+      rect:
+        serializedVersion: 2
+        x: 3660
+        y: 176
+        width: 373
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12b60130c8435e4eac6326580dfd684
+      internalID: 522107644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -116,7 +242,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      NegoneyS_2: -429538937
+      NegoneyS_3: 1776761252
+      NegoneyS_1: 10462403
+      NegoneyS_4: -181260603
+      NegoneyS_0: 83813335
+      NegoneyS_5: 522107644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

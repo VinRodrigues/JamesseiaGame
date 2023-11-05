@@ -60,7 +60,6 @@
     <Compile Include="Assets\scripts\enemyHit.cs" />
     <Compile Include="Assets\scripts\EnemySpawner6.cs" />
     <Compile Include="Assets\scripts\projectileController.cs" />
-    <Compile Include="Assets\saladaepecial.cs" />
     <Compile Include="Assets\scripts\bossMovement.cs" />
     <Compile Include="Assets\scripts\healthLoot.cs" />
     <Compile Include="Assets\scripts\saladade10.cs" />
@@ -79,6 +78,7 @@
     <Compile Include="Assets\scripts\enemyHealth.cs" />
     <Compile Include="Assets\scripts\bossproject.cs" />
     <Compile Include="Assets\scripts\saladaHit.cs" />
+    <Compile Include="Assets\scripts\saladaepecial.cs" />
     <Compile Include="Assets\scripts\EnemySpawner.cs" />
     <Compile Include="Assets\scripts\playerController.cs" />
     <Compile Include="Assets\scripts\bossatk.cs" />
