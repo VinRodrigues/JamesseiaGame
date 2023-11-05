@@ -5,11 +5,34 @@ using UnityEngine.SceneManagement;
 
 public class TrocarCena : MonoBehaviour
 {
-    // Nome da cena que será carregada (pode ser alterado no Inspector do Unity)
+    // Nome da cena que serï¿½ carregada (pode ser alterado no Inspector do Unity)
     [SerializeField] private string nomeDaCena;
 
-    // Função para trocar de cena
+    // Funï¿½ï¿½o para trocar de cena
     public void TrocarDeCena()
+    {
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        
+        if (!gameManager.selectionStatus(nomeDaCena))
+        {
+            SceneManager.LoadScene(nomeDaCena);
+        }else{
+            Debug.Log("Fase jÃ¡ concluÃ­da");
+            SceneManager.LoadScene("menu");
+        }
+    }
+
+    public void startGame()
+    {
+        SceneManager.LoadScene(nomeDaCena);
+    }
+
+    public void loadSelection()
+    {
+        SceneManager.LoadScene("selecao");
+    }
+
+    public void loadBoss()
     {
         SceneManager.LoadScene(nomeDaCena);
     }
