@@ -30,4 +30,5 @@ Para jogar o Jamesseia A Guerra dos memes, você precisará ter o Unity 2022.0f1
 
 Criado Por 
 Vinicius Moura Rodrigues.
-Lucas Moraes
+Kaio Henrique
+Lucas Moraes.
