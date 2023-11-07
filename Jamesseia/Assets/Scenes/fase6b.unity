@@ -942,7 +942,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 293300919}
         m_TargetAssemblyTypeName: TrocarCena, Assembly-CSharp
-        m_MethodName: TrocarDeCena
+        m_MethodName: loadBoss
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1689,6 +1689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf319e27c6c1d1e67bba1ec120f18ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layout: {fileID: 0}
 --- !u!4 &778659606
 Transform:
   m_ObjectHideFlags: 0
@@ -2543,7 +2544,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1106015425}
         m_TargetAssemblyTypeName: TrocarCena, Assembly-CSharp
-        m_MethodName: TrocarDeCena
+        m_MethodName: loadSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

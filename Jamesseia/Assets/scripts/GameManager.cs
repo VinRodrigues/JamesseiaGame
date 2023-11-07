@@ -44,7 +44,9 @@ public class GameManager : MonoBehaviour
     }
 
     private void dequeueTextos(){
+        
 		textos.Dequeue();
+        Debug.Log("Dequeiado2");
     }
 	
     public void concludeFase(){
@@ -167,11 +169,12 @@ public class GameManager : MonoBehaviour
                         GUI.Label(new Rect(texto.x, texto.y, 300, 25), texto.text, guiStyleBlq);
                     }
 
-                    Invoke("dequeueTextos", 2);
+                    if(!texto.isDequeued){
+                        texto.isDequeued = true;
+                        Invoke("dequeueTextos", 2);
+                    }
                 }		
-		    }else{
-                textos.Clear();
-            }
+		    }
         }
 	}
 
@@ -193,6 +196,13 @@ public class GameManager : MonoBehaviour
         sequenciaFases.Add("fase4a", "fase4b");
         sequenciaFases.Add("fase5a", "fase5b");
         sequenciaFases.Add("fase6a", "fase6b");
+        
+        Time.timeScale = 1;
+        Debug.Log("startado");
+
+        textos.Clear();
+
+        textos = new Queue<TextObject>();
 
         setBlqStyle();
         setFimStyle();
