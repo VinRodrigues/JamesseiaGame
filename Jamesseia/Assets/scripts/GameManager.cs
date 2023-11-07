@@ -12,7 +12,19 @@ public class GameManager : MonoBehaviour
     }
 
     public bool selectionStatus(string nomeCena){
-        return ScoreManager.scoreFases[faseNumber(nomeCena)].chefeCompleto;
+        if(faseNumber(nomeCena) != 5){
+            return ScoreManager.scoreFases[faseNumber(nomeCena)].chefeCompleto;
+        }else{
+            bool completeAllFases = true;
+
+            for(int i = 0; i < 5; i++){
+                if(completeAllFases){
+                    completeAllFases = ScoreManager.scoreFases[i].chefeCompleto ? true : false;
+                }
+            }
+
+            return completeAllFases;
+        }
     }
 
     private int faseAtual(){
@@ -57,7 +69,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
     
-    private int faseNumber(string nomeCena){
+    public int faseNumber(string nomeCena){
 		if(nomeCena == "fase1a" 
         || nomeCena == "fase1b")
         {

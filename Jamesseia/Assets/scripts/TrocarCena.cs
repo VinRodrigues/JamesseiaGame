@@ -13,11 +13,22 @@ public class TrocarCena : MonoBehaviour
     {
         GameManager gameManager = FindObjectOfType<GameManager>();
         
-        if (!gameManager.selectionStatus(nomeDaCena))
-        {
-            SceneManager.LoadScene(nomeDaCena);
+        if(gameManager.faseNumber(nomeDaCena) != 5){
+            if(!gameManager.selectionStatus(nomeDaCena)){
+                SceneManager.LoadScene(nomeDaCena);
+            }else{
+                Debug.Log("Fase já concluída");
+                SceneManager.LoadScene("menu");
+            }
+        }else if(gameManager.faseNumber(nomeDaCena) == 5){
+            if(gameManager.selectionStatus(nomeDaCena)){
+                SceneManager.LoadScene(nomeDaCena);
+            }else{
+                Debug.Log("Complete as outras fases!");
+                SceneManager.LoadScene("menu");
+            }
         }else{
-            Debug.Log("Fase já concluída");
+            Debug.Log("Erro na seleção");
             SceneManager.LoadScene("menu");
         }
     }
