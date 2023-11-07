@@ -2543,7 +2543,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1106015425}
         m_TargetAssemblyTypeName: TrocarCena, Assembly-CSharp
-        m_MethodName: TrocarDeCena
+        m_MethodName: loadSelection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
