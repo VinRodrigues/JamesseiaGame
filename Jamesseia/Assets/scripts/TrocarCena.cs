@@ -18,14 +18,14 @@ public class TrocarCena : MonoBehaviour
                 SceneManager.LoadScene(nomeDaCena);
             }else{
                 Debug.Log("Fase já concluída");
-                SceneManager.LoadScene("menu");
+                gameManager.addTarjaBloqueio();
             }
         }else if(gameManager.faseNumber(nomeDaCena) == 5){
             if(gameManager.selectionStatus(nomeDaCena)){
                 SceneManager.LoadScene(nomeDaCena);
             }else{
                 Debug.Log("Complete as outras fases!");
-                SceneManager.LoadScene("menu");
+                gameManager.addTarjaImcomplete();
             }
         }else{
             Debug.Log("Erro na seleção");
