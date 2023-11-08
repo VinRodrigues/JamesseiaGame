@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c5fbe5514d58546ad6e0d4c8362070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saladaDamage: 5
+  saladaDamage: 3
   hitSound: {fileID: 8300000, guid: f745ea9903481284dacd059db85089df, type: 3}
   explosionEffect: {fileID: 790075856515227996, guid: 50c7d1a57fc6ed1419285cc66178b080, type: 3}
 --- !u!61 &3116904608205832932

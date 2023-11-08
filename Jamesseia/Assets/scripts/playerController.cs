@@ -9,7 +9,8 @@ public class playerController : MonoBehaviour
     public float maxSpeed;
     public float maxYPos; // Altura m�xima permitida
     public float minYPos; // Altura m�nima permitida
-
+    public float maxXPos ; // Altura m�xima permitida
+    public float minXPos ; // Altura m�nima permitida
     Rigidbody2D myRB;
     Animator myAnim;
     bool facingRight;
@@ -46,7 +47,9 @@ public class playerController : MonoBehaviour
 
         // Limita a posi��o y dentro das bordas maxYPos e minYPos
         float clampedYPos = Mathf.Clamp(myRB.position.y, minYPos, maxYPos);
-        myRB.position = new Vector2(myRB.position.x, clampedYPos);
+        float clampedXPos = Mathf.Clamp(myRB.position.x, minXPos, maxXPos);
+        //myRB.position = new Vector2(myRB.position.x, clampedYPos,clampedXPos);
+       myRB.position = new Vector2(myRB.position.y, clampedYPos);
 
         // Verifica se a barra de espa�o est� sendo pressionada
         if (Input.GetKeyDown(KeyCode.Space))

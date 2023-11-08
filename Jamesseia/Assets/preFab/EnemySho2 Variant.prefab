@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4356189855574898425, guid: 9f6c39942b6b1224084500cd7d379831, type: 3}
       propertyPath: saladaDamage
-      value: 15
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4724668584973898738, guid: 9f6c39942b6b1224084500cd7d379831, type: 3}
       propertyPath: m_Sprite

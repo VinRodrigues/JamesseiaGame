@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4356189855574898425, guid: 9f6c39942b6b1224084500cd7d379831, type: 3}
       propertyPath: saladaDamage
-      value: 15
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4724668584973898738, guid: 9f6c39942b6b1224084500cd7d379831, type: 3}
       propertyPath: m_Sprite
@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: fe6b5eefa9f3f97469d56a7e02cc3411, type: 2}
     - target: {fileID: 4724668584973898741, guid: 9f6c39942b6b1224084500cd7d379831, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4724668584973898741, guid: 9f6c39942b6b1224084500cd7d379831, type: 3}
       propertyPath: m_LocalScale.x

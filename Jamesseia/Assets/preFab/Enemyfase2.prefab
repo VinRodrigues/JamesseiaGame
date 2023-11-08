@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b87004cc0c3b0346a0fea6ce2e05f65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealth: 20
+  enemyMaxHealth: 30
   enemyDeath: {fileID: 4511835627250255296, guid: df4a131eb450ecf44a61b8a10ab817e2, type: 3}
   drops: 1
   theDrop: {fileID: 1952052749574545963, guid: b2359687b49f5714b948de87f5aa1d05, type: 3}
@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa13f31e84577aa44a943c2e031a713d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 15
   damagedRate: 1
   pushAway: 20
 --- !u!50 &3697323839261797034

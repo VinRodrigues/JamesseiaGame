@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c5fbe5514d58546ad6e0d4c8362070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saladaDamage: 5
+  saladaDamage: 12
   hitSound: {fileID: 8300000, guid: f745ea9903481284dacd059db85089df, type: 3}
   explosionEffect: {fileID: 790075856515227996, guid: 50c7d1a57fc6ed1419285cc66178b080, type: 3}
 --- !u!61 &6168115328832491700
@@ -127,7 +127,7 @@ Transform:
   m_Children:
   - {fileID: 4560335559110051228}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4560335560002093474
 SpriteRenderer:

@@ -1193,6 +1193,8 @@ MonoBehaviour:
   maxSpeed: 5
   maxYPos: -1.1
   minYPos: -2.395
+  maxXPos: 0
+  minXPos: 0
   spawnPointG: {fileID: 1567056071}
   bullet: {fileID: 2049628695796043028, guid: 06113e32a95dcb44b999f05a95b83ddd, type: 3}
   bullet2: {fileID: 5609946260897737721, guid: b979e1bf43e49504f9b02a7351050709, type: 3}
@@ -1581,7 +1583,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34967e8769835f346a73cc56457bbb7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitSec: 30
+  WaitSec: 45
   text: {fileID: 1128289456}
   outroTexto: {fileID: 1034479757}
   botao: {fileID: 979544958}
