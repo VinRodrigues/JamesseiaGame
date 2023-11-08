@@ -64,6 +64,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemyfase4 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4560335560002093486, guid: 1c04f06cde2b63049a489c8be98f2e96, type: 3}
     - target: {fileID: 4498496693611532910, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: m_Color.b
       value: 1
