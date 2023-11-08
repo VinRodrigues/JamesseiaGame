@@ -9,8 +9,7 @@ public class playerController : MonoBehaviour
     public float maxSpeed;
     public float maxYPos; // Altura m�xima permitida
     public float minYPos; // Altura m�nima permitida
-    public float maxXPos ; // Altura m�xima permitida
-    public float minXPos ; // Altura m�nima permitida
+  
     Rigidbody2D myRB;
     Animator myAnim;
     bool facingRight;
@@ -42,14 +41,16 @@ public class playerController : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
 
-        // Configura a velocidade do Rigidbody2D nas dire��es x e y
+        // Limita a posição X entre -4.52 e 4.45
+        float clampedXPos = Mathf.Clamp(myRB.position.x, -4.52f, 4.45f);
+        myRB.position = new Vector2(clampedXPos, myRB.position.y);
+
+        // Configura a velocidade do Rigidbody2D nas direções x e y
         myRB.velocity = new Vector2(moveX * maxSpeed, moveY * maxSpeed);
 
-        // Limita a posi��o y dentro das bordas maxYPos e minYPos
+        // Limita a posição y dentro das bordas maxYPos e minYPos
         float clampedYPos = Mathf.Clamp(myRB.position.y, minYPos, maxYPos);
-        float clampedXPos = Mathf.Clamp(myRB.position.x, minXPos, maxXPos);
-        //myRB.position = new Vector2(myRB.position.x, clampedYPos,clampedXPos);
-       myRB.position = new Vector2(myRB.position.y, clampedYPos);
+        myRB.position = new Vector2(myRB.position.x, clampedYPos);
 
         // Verifica se a barra de espa�o est� sendo pressionada
         if (Input.GetKeyDown(KeyCode.Space))
