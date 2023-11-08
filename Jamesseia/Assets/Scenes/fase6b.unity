@@ -1141,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 500993918}
     - target: {fileID: 3706599938676207705, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: enemyMaxHealth
-      value: 50
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207706, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: m_Sprite
