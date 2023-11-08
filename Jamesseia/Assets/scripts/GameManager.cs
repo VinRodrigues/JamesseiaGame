@@ -6,13 +6,67 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     private Hashtable sequenciaFases = new Hashtable();
+    private Queue<TextObject> textos = new Queue<TextObject>();
+    public GUISkin layout;
+    private GUIStyle guiStyleBlq = new GUIStyle();
+	private GUIStyle guiStyleFim = new GUIStyle();
+
+    private void setBlqStyle(){
+		guiStyleBlq.fontSize = 22;
+		guiStyleBlq.normal.textColor = Color.green;
+
+		Texture2D debugTex = new Texture2D(1,1);
+      	debugTex.SetPixel(0,0, Color.black);
+      	debugTex.Apply();
+
+		guiStyleBlq.normal.background = debugTex;
+	}
+
+	private void setFimStyle(){
+		guiStyleFim.fontSize = 22;
+		guiStyleFim.normal.textColor = Color.red;
+
+		Texture2D debugTex = new Texture2D(1,1);
+      	debugTex.SetPixel(0,0,Color.black);
+      	debugTex.Apply();
+
+		guiStyleFim.normal.background = debugTex;
+	}
+
+    public void addTarjaBloqueio(){
+        TextObject texto = new TextObject(Screen.width / 2 - 175, Screen.height - 80, " A Fase já foi concluída!", false);
+		textos.Enqueue(texto);
+    }
+
+    public void addTarjaImcomplete(){
+        TextObject texto = new TextObject(Screen.width / 2 - 300, Screen.height - 100, "  Fase bloqueada!\n  Conclua todas as fases para liberar a final!", true);
+		textos.Enqueue(texto);
+    }
+
+    private void dequeueTextos(){
+        
+		textos.Dequeue();
+        Debug.Log("Dequeiado2");
+    }
 	
     public void concludeFase(){
         ScoreManager.scoreFases[faseAtual()].chefeCompleto = true;
     }
 
     public bool selectionStatus(string nomeCena){
-        return ScoreManager.scoreFases[faseNumber(nomeCena)].chefeCompleto;
+        if(faseNumber(nomeCena) != 5){
+            return ScoreManager.scoreFases[faseNumber(nomeCena)].chefeCompleto;
+        }else{
+            bool completeAllFases = true;
+
+            for(int i = 0; i < 5; i++){
+                if(completeAllFases){
+                    completeAllFases = ScoreManager.scoreFases[i].chefeCompleto ? true : false;
+                }
+            }
+
+            return completeAllFases;
+        }
     }
 
     private int faseAtual(){
@@ -57,7 +111,7 @@ public class GameManager : MonoBehaviour
 		}
 	}
     
-    private int faseNumber(string nomeCena){
+    public int faseNumber(string nomeCena){
 		if(nomeCena == "fase1a" 
         || nomeCena == "fase1b")
         {
@@ -101,7 +155,27 @@ public class GameManager : MonoBehaviour
 
 	void OnGUI ()
     {
-	    
+        GUI.skin = layout;
+
+        if(SceneManager.GetActiveScene().name == "selecao"){
+            if(textos.Count > 0){
+                foreach(TextObject texto in textos){
+                    if(texto.isFinal)
+                    {
+                        GUI.Label(new Rect(texto.x, texto.y, 600, 50), texto.text, guiStyleFim);
+                    }
+                    else
+                    {
+                        GUI.Label(new Rect(texto.x, texto.y, 300, 25), texto.text, guiStyleBlq);
+                    }
+
+                    if(!texto.isDequeued){
+                        texto.isDequeued = true;
+                        Invoke("dequeueTextos", 2);
+                    }
+                }		
+		    }
+        }
 	}
 
     private void restartGameManager(){
@@ -122,6 +196,16 @@ public class GameManager : MonoBehaviour
         sequenciaFases.Add("fase4a", "fase4b");
         sequenciaFases.Add("fase5a", "fase5b");
         sequenciaFases.Add("fase6a", "fase6b");
+        
+        Time.timeScale = 1;
+        Debug.Log("startado");
+
+        textos.Clear();
+
+        textos = new Queue<TextObject>();
+
+        setBlqStyle();
+        setFimStyle();
     }
 
     void Update()
