@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,6 +32,10 @@ public class TrocarCena : MonoBehaviour
             Debug.Log("Erro na seleção");
             SceneManager.LoadScene("menu");
         }
+    }
+
+    public void blockButton(){
+        Debug.Log("Botão bloqueado!");
     }
 
     public void startGame()

@@ -44,6 +44,10 @@ public class enemyHealth : MonoBehaviour
         GameManager gameManager = FindObjectOfType<GameManager>();
         gameManager.concludeFase();
 
+        if(gameManager.faseAtual() == 5){
+            gameManager.finalScene();
+        }
+
         Destroy(gameObject);
         Instantiate(enemyDeath, transform.position, transform.rotation);
         if (drops) Instantiate(theDrop, transform.position, transform.rotation);

@@ -69,7 +69,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private int faseAtual(){
+    public int faseAtual(){
+        //era melhor fazer um switch case, sem tempo irmao
 		if(SceneManager.GetActiveScene().name == "fase1a" 
         || SceneManager.GetActiveScene().name == "fase1b")
         {
@@ -175,6 +176,12 @@ public class GameManager : MonoBehaviour
                     }
                 }		
 		    }
+        }else if(SceneManager.GetActiveScene().name == "vitoria"){
+            if (GUI.Button(new Rect(Screen.width - 80, Screen.height - 40, 60, 22), "Pular"))
+            {
+                ScoreManager.resetPontuacoes();
+                Invoke("changeScene", 2.5f);
+            }
         }
 	}
 
@@ -187,6 +194,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(sequenciaFases[SceneManager.GetActiveScene().name].ToString());
 	}
 
+    public void finalScene(){
+        SceneManager.LoadScene("vitoria");
+	}
+
     void Start()
     {
         sequenciaFases.Add("menu", "selecao");
@@ -196,6 +207,7 @@ public class GameManager : MonoBehaviour
         sequenciaFases.Add("fase4a", "fase4b");
         sequenciaFases.Add("fase5a", "fase5b");
         sequenciaFases.Add("fase6a", "fase6b");
+        sequenciaFases.Add("vitoria", "menu");
         
         Time.timeScale = 1;
         Debug.Log("startado");

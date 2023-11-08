@@ -1141,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 500993918}
     - target: {fileID: 3706599938676207705, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: enemyMaxHealth
-      value: 400
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207706, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: m_Sprite
@@ -2641,7 +2641,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1106015425}
         m_TargetAssemblyTypeName: TrocarCena, Assembly-CSharp
-        m_MethodName: loadSelection
+        m_MethodName: blockButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
