@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 212777434}
   - component: {fileID: 212777433}
   - component: {fileID: 212777432}
+  - component: {fileID: 212777435}
   m_Layer: 5
   m_Name: gameovertext
   m_TagString: Untagged
@@ -631,6 +632,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1200.0479, y: 346.7064}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &212777435
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212777431}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ed20e63cb9237fa44a452854dac55878, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &237571142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1104,7 +1201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1339037c9c5d0304d8072c5291b94dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 2
+  velocidade: 1
   limiteSuperior: -1.09
   limiteInferior: -2.42
 --- !u!4 &386443127 stripped
@@ -1131,6 +1228,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3706599938676207704, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: m_Radius
+      value: 1.4913857
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706599938676207704, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.050000068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706599938676207704, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.10605918
+      objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207705, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: drops
       value: 0
@@ -1910,7 +2019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salada2Prefab: {fileID: 7051950358811393789, guid: 517a78225e80c854eb3d968d23c7c5c2, type: 3}
   heartPrefab: {fileID: 1952052749574545963, guid: b2359687b49f5714b948de87f5aa1d05, type: 3}
-  dropRateSalada2: 1
+  dropRateSalada2: 0.7
   destroyTime: 5
   velocidadeDescida: 2
   spawnPoint: {fileID: 891071361}
@@ -3089,7 +3198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salada2Prefab: {fileID: 7051950358811393789, guid: 517a78225e80c854eb3d968d23c7c5c2, type: 3}
   heartPrefab: {fileID: 1952052749574545963, guid: b2359687b49f5714b948de87f5aa1d05, type: 3}
-  dropRateSalada2: 1
+  dropRateSalada2: 0.7
   destroyTime: 5
   velocidadeDescida: 2
   spawnPoint: {fileID: 1257234742}

@@ -183,3 +183,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quantidadeMunicao: 3
+  hitSound: {fileID: 8300000, guid: bd7771be958fa334ab50a30f660cf129, type: 3}
