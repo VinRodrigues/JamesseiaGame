@@ -182,6 +182,12 @@ public class GameManager : MonoBehaviour
                 ScoreManager.resetPontuacoes();
                 Invoke("changeScene", 2.5f);
             }
+        }else if(SceneManager.GetActiveScene().name == "creditos"){
+            if (GUI.Button(new Rect(Screen.width - 80, Screen.height - 40, 90, 28), "Voltar pro menu"))
+            {
+                ScoreManager.resetPontuacoes();
+                Invoke("changeScene", 2.5f);
+            }
         }
 	}
 
@@ -207,7 +213,8 @@ public class GameManager : MonoBehaviour
         sequenciaFases.Add("fase4a", "fase4b");
         sequenciaFases.Add("fase5a", "fase5b");
         sequenciaFases.Add("fase6a", "fase6b");
-        sequenciaFases.Add("vitoria", "menu");
+        sequenciaFases.Add("vitoria", "creditos");
+        sequenciaFases.Add("creditos", "menu");
         
         Time.timeScale = 1;
         Debug.Log("startado");

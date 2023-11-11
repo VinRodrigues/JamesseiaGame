@@ -1141,7 +1141,7 @@ PrefabInstance:
       objectReference: {fileID: 500993918}
     - target: {fileID: 3706599938676207705, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: enemyMaxHealth
-      value: 100
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207706, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: m_Sprite
@@ -1910,7 +1910,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salada2Prefab: {fileID: 7051950358811393789, guid: 517a78225e80c854eb3d968d23c7c5c2, type: 3}
   heartPrefab: {fileID: 1952052749574545963, guid: b2359687b49f5714b948de87f5aa1d05, type: 3}
-  dropRateSalada2: 0.3
+  dropRateSalada2: 1
   destroyTime: 5
   velocidadeDescida: 2
   spawnPoint: {fileID: 891071361}
@@ -3089,7 +3089,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   salada2Prefab: {fileID: 7051950358811393789, guid: 517a78225e80c854eb3d968d23c7c5c2, type: 3}
   heartPrefab: {fileID: 1952052749574545963, guid: b2359687b49f5714b948de87f5aa1d05, type: 3}
-  dropRateSalada2: 0.3
+  dropRateSalada2: 1
   destroyTime: 5
   velocidadeDescida: 2
   spawnPoint: {fileID: 1257234742}
