@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b31ad572e1e1e14bac5eca7b3c3bde4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeMovimento: 0.5
+  velocidadeMovimento: 0.7
   bulletPrefab: {fileID: 1083437110960910825, guid: 58bd43161b4d0d843a26b8932dc95088, type: 3}
   bulletSpawnPoint: {fileID: 4254380101994361007}
   taxaMinimaDeTiro: 1

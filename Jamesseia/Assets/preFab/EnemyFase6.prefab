@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 4084995221920051958, guid: 8b457d068a9ece841a28555130c21c2c, type: 3}
+    - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: velocidadeMovimento
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207719, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: damage
       value: 10

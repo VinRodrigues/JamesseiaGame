@@ -3484,7 +3484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34967e8769835f346a73cc56457bbb7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitSec: 45
+  WaitSec: 60
   text: {fileID: 2145645352}
   outroTexto: {fileID: 1841641117}
   botao: {fileID: 579452099}

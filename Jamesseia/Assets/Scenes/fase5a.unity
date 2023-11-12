@@ -938,7 +938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   swarmerPrefab: {fileID: 7747028775053097125, guid: 95ee63adb8da1734db62b1c914853375, type: 3}
-  swarmerInterval: 4.5
+  swarmerInterval: 2.5
 --- !u!4 &560580470
 Transform:
   m_ObjectHideFlags: 0
@@ -2854,7 +2854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34967e8769835f346a73cc56457bbb7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaitSec: 45
+  WaitSec: 60
   text: {fileID: 1475258834}
   outroTexto: {fileID: 1561288814}
   botao: {fileID: 1234470926}
