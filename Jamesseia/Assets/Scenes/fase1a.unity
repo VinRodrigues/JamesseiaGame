@@ -1551,7 +1551,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b18a94cc44cf64548b450caf3ea46466, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.053
+  m_Volume: 0
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2682,7 +2682,7 @@ MonoBehaviour:
   spawnPointG: {fileID: 431287743}
   bullet: {fileID: 2049628695796043028, guid: 06113e32a95dcb44b999f05a95b83ddd, type: 3}
   bullet2: {fileID: 5609946260897737721, guid: b979e1bf43e49504f9b02a7351050709, type: 3}
-  tirosRestantes: 10
+  tirosRestantes: 0
   textoTirosRestantes: {fileID: 571470403}
 --- !u!82 &1292220814
 AudioSource:
@@ -2696,7 +2696,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6e903c61293ea6646b42cadc496760d8, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.097
+  m_Volume: 0
   m_Pitch: 1
   Loop: 1
   Mute: 0
