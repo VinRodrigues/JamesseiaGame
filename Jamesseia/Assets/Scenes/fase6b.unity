@@ -953,7 +953,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 613d7aba6e3d65b48a9329ab39cf8f46, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.023
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1201,7 +1201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1339037c9c5d0304d8072c5291b94dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 1
+  velocidade: 2
   limiteSuperior: -1.09
   limiteInferior: -2.42
 --- !u!4 &386443127 stripped
@@ -1322,7 +1322,11 @@ PrefabInstance:
       objectReference: {fileID: 282914859094284974, guid: e0c11b826888c2c44ae846986d0b1ffa, type: 3}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: taxaMaximaDeTiro
-      value: 3
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: taxaMinimaDeTiro
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: velocidadeMovimento

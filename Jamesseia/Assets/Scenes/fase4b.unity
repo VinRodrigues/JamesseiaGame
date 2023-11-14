@@ -594,6 +594,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3706599937666794625, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 3706599937666794625, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207704, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: m_Radius
       value: 1.5830729
@@ -688,7 +696,7 @@ PrefabInstance:
       objectReference: {fileID: 655049998479815355, guid: 91dbe9f1ae5fcc34bb7aea8ab50d8d72, type: 3}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: taxaMaximaDeTiro
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: velocidadeMovimento
@@ -791,7 +799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 1
   limiteSuperior: -0.91
-  limiteInferior: -1.87
+  limiteInferior: -1.99
 --- !u!1 &266136394
 GameObject:
   m_ObjectHideFlags: 0

@@ -1918,7 +1918,7 @@ MonoBehaviour:
   spawnPointG: {fileID: 1144811107}
   bullet: {fileID: 2049628695796043028, guid: 06113e32a95dcb44b999f05a95b83ddd, type: 3}
   bullet2: {fileID: 5609946260897737721, guid: b979e1bf43e49504f9b02a7351050709, type: 3}
-  tirosRestantes: 3
+  tirosRestantes: 0
   textoTirosRestantes: {fileID: 103466392}
 --- !u!82 &1456648538
 AudioSource:
@@ -3012,7 +3012,7 @@ PrefabInstance:
       objectReference: {fileID: 2046781062526677385, guid: 0630da9f871d128499def9e267369cd7, type: 3}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: taxaMaximaDeTiro
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: velocidadeMovimento

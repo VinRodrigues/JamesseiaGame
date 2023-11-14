@@ -491,7 +491,7 @@ PrefabInstance:
       objectReference: {fileID: 730597196539760820, guid: a7addb9fbf7b418428b4f787d8ea473f, type: 3}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: taxaMaximaDeTiro
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3706599938676207717, guid: 4223b7e338da84b43bd6cacd4fae2e85, type: 3}
       propertyPath: velocidadeMovimento
